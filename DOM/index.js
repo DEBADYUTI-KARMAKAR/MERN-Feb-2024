@@ -56,3 +56,34 @@ b1.style.paddingLeft='15px';
 b1.style.paddingRight='15px';
 b1.style.borderRadius='5px';
 b1.style.margin='20px';
+
+
+
+let pr=document.createElement('p');
+
+pr.innerHTML='Hello Javascript';
+document.body.appendChild(pr);
+
+let orlist = document.createElement('ol');
+document.body.appendChild(orlist);
+
+
+let list1 = document.createElement('li');
+list1.innerHTML='JavaScript';
+orlist.appendChild(list1);
+
+let list2 = document.createElement('li');
+list2.innerHTML='CSS';
+orlist.appendChild(list2);
+
+
+let list3 = document.createElement('li');
+list3.innerHTML='HTML';
+orlist.appendChild(list3);
+
+
+let button = document.querySelector('.b');
+
+button.addEventListener("click",()=>{
+    alert("Hello")
+})
